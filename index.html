@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <div id="title-desc">
+        <h1 id="title">Rate your experience</h1>
+        <p id="desc">Please fill out this form to tell us about your experience with Macomber's Cucumbers</p>
+      </div>
+
+      <form id="survey-form">
+
+        <label id="name-label">
+          Enter your name (required):</label> <input id="name" type="text" required placeholder="cool kid"/> <br>
+       
+
+        <label id="email-label">
+          Enter your email (required):</label> <input id="email" type="email" placeholder="eg: mp3@lamekids.com" required/> <br>
+        
+
+        <label id="number-label">
+          How many days old are you?:</label> <input id="number" type="number" min=0 max=9999 placeholder="eg: 99"/> <br> 
+        
+        <hr class="thick">
+        <label>
+          What location did you buy from?: <br></label>
+          <select id="dropdown">
+            <option>select one</option>
+            <option>Amazon rainforest</option>
+            <option>The Moon</option>
+            <option>1000 Charming Av.</option>
+            <option>I stole</option>
+          </select> <br>
+        
+        <hr>
+        <label for="radios" id="rate-label">
+          Rate your experience: <br></label>
+          <div id="rad-div" class="form-div">
+            <input type="radio" name="radio" id="radios">Good
+            <input type="radio" name="radio" id="radios">Better
+            <input type="radio" name="radio" id="radios">Best
+          </div>
+        <br>
+        <hr>
+        <label for="checks">
+            What type of Macomber Cucumber did you buy? <br> </label>
+        <div id="check-div" class="form-div">
+            <input type="checkbox" value="cool"> Cool <br>
+            <input type="checkbox" value="amazing"> Amazing <br>
+            <input type="checkbox" value="awesome"> Awesome <br>
+            <input type="checkbox" value="beautiful"> Beautiful <br>
+            <input type="checkbox" value="smart"> Smart <br>
+        </div>
+        <hr class="thick">
+        <label>
+            Any additional information you would like to share: <br></label>
+            <textarea cols="43" rows="4" placeholder="I think Macomber's Cucumbers are so good because..."></textarea>
+        
+            
+            <br>
+            <input type="submit" id="submit">
+            <hr class="thick">
+      </form>
+  </main>
+  <footer>
+    <p>Copywrite CBM LLC 2008 - <a href="https://www.coolmathgames.com/">website</a></p>
+  </body>
+</html>
